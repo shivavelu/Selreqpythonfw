@@ -135,3 +135,5 @@ cython_debug/
 
 # Selenium WebDriver
 *.log
+/reports/
+/screenshot/
