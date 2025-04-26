@@ -1,5 +1,14 @@
 {
-    "fruit": "Apple",
-    "size": "Large",
-    "color": "Red"
+    "testdata_login": [
+        {
+            "username": "sivapytest1@gmail.com",
+            "password": "siva123",
+            "expected_error": "Incorrect username or password"
+        },
+        {
+            "username": "sivapytester@gmail.com",
+            "password": "sivatest1",
+            "expected_error": "Incorrect username or password"
+        }
+    ]
 }

@@ -56,7 +56,6 @@ def _capture_screenshot(name):
     return driver.get_screenshot_as_base64() #the hero
 
 
-
 if __name__=="__main__":
     project_dir = os.path.dirname(os.path.abspath(__file__))
     screenshot_dir = os.path.join(project_dir, "screenshot")
