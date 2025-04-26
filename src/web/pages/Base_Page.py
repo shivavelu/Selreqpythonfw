@@ -25,21 +25,12 @@ class Base_Page(object):
 
     def get_text_from_element(self, element):
         try:
-            time.sleep(10)
             wait = WebDriverWait(self.driver, 10)
             self.etext = wait.until(EC.presence_of_element_located(element))
             return self.etext.text
         except Exception as e:
             print(f"Error retrieving text: {e}")
             return None
-        '''try:
-
-            self.etext = self.driver.find_element(*self.local_directories[element])
-           # self.etext = self.driver.find_element(*element)
-        except KeyError:
-            print("Element {} does not exist".format(element))
-        text = self.etext.text
-        return text'''
 
     def get_attr_value(self, element):
         try:

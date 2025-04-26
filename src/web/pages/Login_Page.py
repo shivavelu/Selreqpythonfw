@@ -33,10 +33,10 @@ class Login_Page(Base_Page):
         self.driver.find_element(*self.local_directories["button_logout"]).click()
 
     def   getLoginError(self):
-        ele=self.driver.find_element(*self.local_directories["text_Error"])
-        time.sleep(10)
-        return ele.text
-        # self.get_text_from_element(self.local_directories["text_Error"])
+        # ele=self.driver.find_element(*self.local_directories["text_Error"])
+        # time.sleep(10)
+        # return ele.text
+        return self.get_text_from_element(self.local_directories["text_Error"])
 
 
 
