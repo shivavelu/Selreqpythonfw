@@ -11,5 +11,4 @@ class userservice_api(Base_api):
 
     def get_loggeinuser(self):
         url = f"{BASE_URI}/{USER_LOGIN}"
-        return self.request.get_request(url, self.headers_with_basic_auth)
-
+        return self.request.get_request(url, self.get_headers_with_basic_auth())
